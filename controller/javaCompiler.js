@@ -20,7 +20,6 @@ const compile = async (fileName) => {
             return false
     })
     return true
-
 }
 
 
