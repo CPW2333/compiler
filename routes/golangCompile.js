@@ -25,8 +25,8 @@ router.post('/golang', uploadSingleMiddleware, async (req, res, next) => {
     if (!file) return res.json(new ErrorModel('请上传源码文件！'))
 
     // 转给controller处理编译过程
-    const result = await compile()
-    if (!result) return res.json(new ErrorModel('文件编译失败！'))
+    // const result = await compile()
+    // if (!result) return res.json(new ErrorModel('文件编译失败！'))
 
     res.json(new SuccessModel('目前仅支持编译java源文件，敬请期待！'))
 
