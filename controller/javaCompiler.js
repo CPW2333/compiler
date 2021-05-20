@@ -2,19 +2,6 @@ const path = require('path')
 const fs = require('fs')
 const cmd = require('node-cmd');
 
-const {
-    // SuccessModel,
-    ErrorModel
-} = require('../model/resModel')
-
-const {
-    mime
-} = require('../config/mime')
-const {
-    authFileType
-} = require('../utils/authFileType')
-
-
 // 编译java文件
 const compile = async (fileName) => {
     let realFilePath = path.normalize(path.join(__dirname, '..', '/uploads/', fileName))
