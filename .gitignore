@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+package-lock.json
+# 忽略上传的文件
+tmp_uploads/*
+uploads/*.java
+uploads/*.class
+uploads/*.go
+# 忽略日志
+logs/*
+# 忽略测试文件
+CM.js
+TestTables.js
